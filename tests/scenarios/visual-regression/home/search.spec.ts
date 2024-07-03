@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-import { HomePage } from '../../support/pages/home/homePage';
+import { HomePage } from '../../../support/pages/home/homePage';
 
 let homePage: HomePage;
 
@@ -14,6 +14,6 @@ test.describe('Search', () => {
 
     await homePage.open();
     await homePage.search(searchTerm);
-    await expect(page).toHaveScreenshot();
+    await expect(page).toHaveScreenshot('Search-search-page-visual-regression-test-1-chromium-darwin.png');
   });
 });
