@@ -11,6 +11,7 @@ dotenv.config({ path: './.env' });
  */
 export default defineConfig({
   testDir: './tests',
+  snapshotPathTemplate: '{testDir}/__screenshots__/{testFilePath}/{arg}{ext}',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
