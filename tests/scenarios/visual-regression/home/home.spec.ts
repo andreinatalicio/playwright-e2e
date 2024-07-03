@@ -11,6 +11,6 @@ test.beforeEach(async ({ page }) => {
 test.describe('Home', () => {
   test('home page visual regression test', async ({ page }) => {
     await homePage.open();
-    await expect(page).toHaveScreenshot('Home-home-page-visual-regression-test-1-chromium-darwin.png');
+    await expect(page).toHaveScreenshot();
   });
 });

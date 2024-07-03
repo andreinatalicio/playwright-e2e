@@ -14,6 +14,6 @@ test.describe('Search', () => {
 
     await homePage.open();
     await homePage.search(searchTerm);
-    await expect(page).toHaveScreenshot('Search-search-page-visual-regression-test-1-chromium-darwin.png');
+    await expect(page).toHaveScreenshot();
   });
 });
